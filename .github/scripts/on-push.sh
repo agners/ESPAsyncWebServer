@@ -31,7 +31,7 @@ if [ "$BUILD_PIO" -eq 0 ]; then
 	source ./.github/scripts/install-arduino-ide.sh
 
 	echo "Installing ESPAsyncWebServer ..."
-	cp -af "$GITHUB_WORKSPACE" "$ARDUINO_USR_PATH/libraries/ESPAsyncWebServer"
+	cp -af "$GITHUB_WORKSPACE/src" "$ARDUINO_USR_PATH/libraries/ESPAsyncWebServer"
 	ls -la "$GITHUB_WORKSPACE"
 	ls -la "$ARDUINO_USR_PATH/libraries/ESPAsyncWebServer"
 	echo "Installing ArduinoJson ..."
